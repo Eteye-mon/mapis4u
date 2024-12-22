@@ -7,7 +7,10 @@ import { useRouter } from "next/navigation";
 
 import PageHeader from '@/app/components/PageHeader'
 import tblImage from "../../../../public/images/Leading media.png";
-
+import { Metadata } from 'next';
+const metadata = {
+    title: 'Procurement',
+};
 
 export default function Page() {
     const router = useRouter();

@@ -2,7 +2,11 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import PageHeader from '@/app/components/PageHeader'
+import { Metadata } from 'next';
 
+const metadata = {
+    title: 'Quotes',
+};
 export const wizardSteps = [
     { id: 1, name: "Step 1", path: "step1" },
     { id: 2, name: "Step 2", path: "step2" },
@@ -35,7 +39,7 @@ export default function WizardLayout({ children, currentStep }) {
                                 1
                             </div>
                             <div className="ml-3">
-                                <p className={`text-sm font-medium ${currentStep > 1 ? "text-[#101928] font-bold" : "text-[#99A2B3] font-medium"}`}>Request Information</p>
+                                <p className={`text-sm font-medium ${currentStep >= 1 ? "text-[#101928] font-bold" : "text-[#99A2B3] font-medium"}`}>Request Information</p>
                                 <p className="text-xs text-gray-500">Provide details about the RFQ</p>
                             </div>
                         </div>

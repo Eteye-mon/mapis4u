@@ -101,13 +101,14 @@ export default function Page() {
                         <div className='w-1/3'>
                             <Textarea
 
-                                className="mb-6 md:mb-0"
-                                label="Note"
-                                labelPlacement="outside"
-                                placeholder="Enter note here"
-                                variant="bordered"
-                                onValueChange={setValue}
-                                maxRows={3}
+                            className="mb-6 md:mb-0"
+                            label="Note"
+                            labelPlacement="outside"
+                            placeholder="Enter note here"
+                            variant="bordered"
+                            onValueChange={setValue}
+                            maxRows={3}
+                            maxLength={200}
                             />
                             <p className="text-default-500 text-small text-end mt-3">{value.length}/200</p>
                         </div>

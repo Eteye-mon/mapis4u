@@ -297,7 +297,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                <ul className="space-y-1 mt-32 px-2 ">
+                <ul className="space-y-1 absolute bottom-0  px-2 ">
                     <li>
                         <Link
                             href="/support"

@@ -13,7 +13,6 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        warning: "#DFBC1A",
       },
     },
   },

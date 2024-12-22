@@ -17,9 +17,9 @@ export const metadata = {
   title: "MAP | Medical Advanced Platform",
   description: "mapis4u.com",
   icons: {
-    appleTouchIcon: "/public/images/favicon.png",
-    icon32: "/public/images/favicon.png",
-    icon16: "/public/images/favicon.png",
+    appleTouchIcon: "/public/app/apple-touch-icon.png",
+    icon32: "/public/app/favicon-32x32.png",
+    icon16: "/public/app/favicon-32x32.png",
   },
 };
 
