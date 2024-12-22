@@ -44,7 +44,7 @@ export default function IndexPage() {
                 <div className="w-full mb-5">
                   <Input
                     isRequired
-                    className="max-w-xs"
+                    className="max-w-full"
                     endContent={
                       <button
                         aria-label="toggle password visibility"
@@ -95,11 +95,11 @@ export default function IndexPage() {
 
                 <div className="col-span-1 w-full sm:flex sm:items-center sm:gap-4">
                   <Button
-                    className="bg-[#175cff]  text-gray-900"
+                    className="bg-[#175cff]  text-white"
                     endContent={isLoading ? null : <ArrowRight />}
                     fullWidth={true}
                     isLoading={isLoading}
-                    radius="full"
+                    radius="lg"
                     size="lg"
                     onClick={() => router.push("/procurement")}
                   >
