@@ -18,12 +18,15 @@ export default function Page() {
 
     return (
         <WizardLayout currentStep={3}>
-            <div className=" rounded-lg p-6 max-w-full mx-auto border border-[#E4E7EC]">
+            <div className=" rounded-lg p-6 max-w-full mx-auto border border-[#E4E7EC]  mb-5">
                 <div className="flex items-center justify-between">
-                    <h2 className="text-lg font-semibold">Quote Information</h2>
+                    <h2 className="text-lg font-semibold">Request Information</h2>
                     <div className="text-right">
-                        <span className="text-sm text-gray-500">Expected delivery date :</span>
-                        <span className="text-black font-medium">2024-12-02</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5961 2.91009C19.2495 1.5635 17.0662 1.5635 15.7196 2.91009L7.19416 11.4356C6.58217 12.0475 6.18518 12.8415 6.06279 13.6983L5.81573 15.4277C5.62717 16.7476 6.75854 17.879 8.07847 17.6904L9.80784 17.4434C10.6646 17.321 11.4586 16.924 12.0706 16.312L20.5961 7.78652C21.9426 6.43993 21.9426 4.25668 20.5961 2.91009ZM17.3433 4.15061C17.907 3.76634 18.6818 3.82424 19.1818 4.3243C19.6819 4.82436 19.7398 5.59915 19.3555 6.16283L17.3433 4.15061ZM15.9112 5.54693L17.9592 7.59493L10.6564 14.8978C10.3504 15.2038 9.95339 15.4023 9.525 15.4635L7.79563 15.7105L8.04269 13.9811C8.10388 13.5527 8.30238 13.1558 8.60837 12.8498L15.9112 5.54693Z" fill="#98A2B3" />
+                            <path d="M6 2.0001C3.79086 2.0001 2 3.79096 2 6.0001V18.0001C2 20.2092 3.79086 22.0001 6 22.0001H18C20.2091 22.0001 22 20.2092 22 18.0001V12.0001C22 11.4478 21.5523 11.0001 21 11.0001C20.4477 11.0001 20 11.4478 20 12.0001V18.0001C20 19.1047 19.1046 20.0001 18 20.0001H6C4.89543 20.0001 4 19.1047 4 18.0001V6.0001C4 4.89553 4.89543 4.0001 6 4.0001H8.68421C9.2365 4.0001 9.68421 3.55239 9.68421 3.0001C9.68421 2.44782 9.2365 2.0001 8.68421 2.0001H6Z" fill="#98A2B3" />
+                        </svg>
+
                     </div>
 
                 </div>
@@ -56,38 +59,12 @@ export default function Page() {
                             </div>
                         </div>
                     </div>
-
-                    <div className="mt-6 p-4 border rounded-lg order border-[#E4E7EC] w-[352px]">
-                        <div className="flex gap-2">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.91665 3.83333C7.91665 4.29357 7.54355 4.66667 7.08331 4.66667H6.24998C5.78974 4.66667 5.41665 4.29357 5.41665 3.83333C5.41665 3.3731 5.78974 3 6.24998 3H7.08331C7.54355 3 7.91665 3.3731 7.91665 3.83333Z" fill="#98A2B3" />
-                                <path d="M10.4166 7.16667C10.8769 7.16667 11.25 6.79357 11.25 6.33333C11.25 5.8731 10.8769 5.5 10.4166 5.5H9.58331C9.12308 5.5 8.74998 5.8731 8.74998 6.33333C8.74998 6.79357 9.12308 7.16667 9.58331 7.16667H10.4166Z" fill="#98A2B3" />
-                                <path d="M7.91665 8.83333C7.91665 9.29357 7.54355 9.66667 7.08331 9.66667H6.24998C5.78974 9.66667 5.41665 9.29357 5.41665 8.83333C5.41665 8.3731 5.78974 8 6.24998 8H7.08331C7.54355 8 7.91665 8.3731 7.91665 8.83333Z" fill="#98A2B3" />
-                                <path d="M10.4166 4.66667C10.8769 4.66667 11.25 4.29357 11.25 3.83333C11.25 3.3731 10.8769 3 10.4166 3H9.58331C9.12308 3 8.74998 3.3731 8.74998 3.83333C8.74998 4.29357 9.12308 4.66667 9.58331 4.66667H10.4166Z" fill="#98A2B3" />
-                                <path d="M7.91665 6.33333C7.91665 6.79357 7.54355 7.16667 7.08331 7.16667H6.24998C5.78974 7.16667 5.41665 6.79357 5.41665 6.33333C5.41665 5.8731 5.78974 5.5 6.24998 5.5H7.08331C7.54355 5.5 7.91665 5.8731 7.91665 6.33333Z" fill="#98A2B3" />
-                                <path d="M10.4166 9.66667C10.8769 9.66667 11.25 9.29357 11.25 8.83333C11.25 8.3731 10.8769 8 10.4166 8H9.58331C9.12308 8 8.74998 8.3731 8.74998 8.83333C8.74998 9.29357 9.12308 9.66667 9.58331 9.66667H10.4166Z" fill="#98A2B3" />
-                                <path d="M7.91665 11.3333C7.91665 11.7936 7.54355 12.1667 7.08331 12.1667H6.24998C5.78974 12.1667 5.41665 11.7936 5.41665 11.3333C5.41665 10.8731 5.78974 10.5 6.24998 10.5H7.08331C7.54355 10.5 7.91665 10.8731 7.91665 11.3333Z" fill="#98A2B3" />
-                                <path d="M10.4166 12.1667C10.8769 12.1667 11.25 11.7936 11.25 11.3333C11.25 10.8731 10.8769 10.5 10.4166 10.5H9.58331C9.12308 10.5 8.74998 10.8731 8.74998 11.3333C8.74998 11.7936 9.12308 12.1667 9.58331 12.1667H10.4166Z" fill="#98A2B3" />
-                                <path fillRule="evenodd" clipRule="evenodd" d="M3.33331 2.16667C3.33331 1.24619 4.0795 0.5 4.99998 0.5H11.6666C12.5871 0.5 13.3333 1.24619 13.3333 2.16667V5.5H15.8333C16.7538 5.5 17.5 6.24619 17.5 7.16667V13.8333H18.3333C18.7935 13.8333 19.1666 14.2064 19.1666 14.6667C19.1666 15.1269 18.7935 15.5 18.3333 15.5H1.66665C1.20641 15.5 0.833313 15.1269 0.833313 14.6667C0.833313 14.2064 1.20641 13.8333 1.66665 13.8333H3.33331V2.16667ZM4.99998 13.8333H11.6666V2.16667H4.99998V13.8333ZM15.8333 10.5V9.66667H15.4166C14.9564 9.66667 14.5833 9.29357 14.5833 8.83333C14.5833 8.3731 14.9564 8 15.4166 8H15.8333V7.16667H13.3333V13.8333H15.8333V12.1667H15.4166C14.9564 12.1667 14.5833 11.7936 14.5833 11.3333C14.5833 10.8731 14.9564 10.5 15.4166 10.5H15.8333Z" fill="#98A2B3" />
-                            </svg>
-                            <span className="text-sm font-medium text-gray-500">Client</span>
-
-                        </div>
-                        <div className="flex items-center mt-2">
-                            <div className="w-8 h-8 bg-[#FFECE5] text-[#101928] rounded-full flex items-center justify-center font-semibold text-[10px]">W</div>
-                            <div className="ml-3">
-                                <p className="text-black font-medium">Westend Hospital</p>
-                                <p className="text-sm text-gray-400">Clear street</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
 
             </div>
 
-            <div className="p-6 bg-white shadow rounded-lg max-w-full mx-auto border">
+            <div className="p-6 bg-white shadow rounded-lg max-w-full mx-auto border mb-5">
                 <h2 className="text-lg font-semibold mb-4">Item(s)</h2>
                 <div className="overflow-x-auto rounded-[10px]  border  border-[#E4E7EC]">
                     <table className="w-full text-left ">
@@ -205,7 +182,7 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className="p-[24px] rounded-lg border border-[#D0D5DD] flex items-center justify-between max-w-full mx-auto">
+            <div className="p-[24px] rounded-lg border border-[#D0D5DD] flex items-center justify-between max-w-full mx-auto mb-16">
                 <div className="flex items-start space-x-4">
                     <div className="w-10 h-10 flex items-center justify-center">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

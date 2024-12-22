@@ -35,7 +35,7 @@ export default function WizardLayout({ children, currentStep }) {
                                 1
                             </div>
                             <div className="ml-3">
-                                <p className="text-sm font-medium text-blue-600">Request Information</p>
+                                <p className={`text-sm font-medium ${currentStep > 1 ? "text-[#101928] font-bold" : "text-[#99A2B3] font-medium"}`}>Request Information</p>
                                 <p className="text-xs text-gray-500">Provide details about the RFQ</p>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ export default function WizardLayout({ children, currentStep }) {
                                 2
                             </div>
                             <div className="ml-3">
-                                <p className="text-sm font-medium text-gray-700">Terms and Attachments</p>
+                                <p className={`text-sm font-medium ${currentStep >= 2 ? "text-[#101928] font-bold" : "text-[#99A2B3] font-medium"}`}>Terms and Attachments</p>
                                 <p className="text-xs text-gray-500">Payment and delivery terms</p>
                             </div>
                         </div>
@@ -67,14 +67,14 @@ export default function WizardLayout({ children, currentStep }) {
                                 3
                             </div>
                             <div className="ml-3">
-                                <p className="text-sm font-medium text-gray-700">Review</p>
+                                <p className={`text-sm font-medium ${currentStep == 3 ? "text-[#101928] font-bold" : "text-[#99A2B3] font-medium"}`}>Review</p>
                                 <p className="text-xs text-gray-500">Confirm all information provided</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="max-w-full mx-auto p-6 bg-white shadow-lg rounded-lg">
+                <div className="max-w-full mx-auto p-6 bg-white border border-[#E4E7EC] rounded-lg">
                     {children}
                     <div className="flex justify-end gap-4 items-center">
                         <button

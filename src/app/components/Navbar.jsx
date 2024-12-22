@@ -16,7 +16,7 @@ export default function Navbar() {
     const route = useRouter();
 
     const isActive = (pathname) => router && router.startsWith(pathname);
-    const [activeMenu, setActiveMenu] = useState("");
+    const [activeMenu, setActiveMenu] = useState("/procurement");
 
     const toggleMenu = (menu) => {
         setActiveMenu((prev) => (prev === menu ? "" : menu));
@@ -97,46 +97,37 @@ export default function Navbar() {
                             </div>
                             <span>
                                 {isActiveMenu("/procurement") ? (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="w-4 h-4"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M19 9l-7 7-7-7"
-                                        />
-                                    </svg>
+                                  
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.4107 0.910704C5.73614 0.585267 6.26378 0.585267 6.58921 0.910704L11.5892 5.9107C11.9147 6.23614 11.9147 6.76378 11.5892 7.08921C11.2638 7.41465 10.7361 7.41465 10.4107 7.08921L5.99996 2.67847L1.58921 7.08921C1.26378 7.41465 0.736141 7.41465 0.410704 7.08921C0.0852667 6.76378 0.0852667 6.23614 0.410704 5.9107L5.4107 0.910704Z" fill="#344054" />
+                                        </svg>
                                 ) : (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="w-4 h-4"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M9 5l7 7-7 7"
-                                        />
-                                    </svg>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="w-4 h-4"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                d="M19 9l-7 7-7-7"
+                                            />
+                                        </svg>
+
                                 )}
                             </span>
                         </div>
                         {isActiveMenu("/procurement") && (
                             <ul className="mt-2 space-y-1">
-                                <li className={`flex items-center justify-between cursor-pointer gap-2 rounded-lg px-4 py-2  ${isActive("/procurement/quotes")
+                                <li className={`flex items-center justify-between cursor-pointer gap-2 rounded-lg px-4 py-2  ${isActive("/procurement")
                                     ? "bg-[#E3EAFB] text-[#344054] font-semibold h-[40px] w-[240px]  dark:bg-gray-800 dark:text-gray-200"
                                     : "text-gray-700 hover:bg-[#E3EAFB]   h-[40px] w-[240px] hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                                     }`}>
                                     <Link
-                                        href="/procurement/quotes" className="ml-4 text-[14px]"
+                                        href="/procurement" className="ml-4 text-[14px]"
 
                                     >
                                         Quotes
@@ -186,19 +177,8 @@ export default function Navbar() {
                             </div>
                             <span>
                                 {isActiveMenu("/finance") ? (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="w-4 h-4"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M19 9l-7 7-7-7"
-                                        />
+                                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.4107 0.910704C5.73614 0.585267 6.26378 0.585267 6.58921 0.910704L11.5892 5.9107C11.9147 6.23614 11.9147 6.76378 11.5892 7.08921C11.2638 7.41465 10.7361 7.41465 10.4107 7.08921L5.99996 2.67847L1.58921 7.08921C1.26378 7.41465 0.736141 7.41465 0.410704 7.08921C0.0852667 6.76378 0.0852667 6.23614 0.410704 5.9107L5.4107 0.910704Z" fill="#344054" />
                                     </svg>
                                 ) : (
                                     <svg
@@ -212,7 +192,7 @@ export default function Navbar() {
                                         <path
                                             strokeLinecap="round"
                                             strokeLinejoin="round"
-                                            d="M9 5l7 7-7 7"
+                                            d="M19 9l-7 7-7-7"
                                         />
                                     </svg>
                                 )}
